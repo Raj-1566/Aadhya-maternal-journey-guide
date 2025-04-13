@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BarChart, LineChart } from "@/components/ui/chart";
+import { LineChart, BarChart } from "@/components/ui/chart";
 import { HeartPulse, Weight, Thermometer, Droplets, ArrowUpCircle } from "lucide-react";
 
 const HealthHistory = () => {
@@ -157,6 +157,7 @@ const HealthHistory = () => {
                 <LineChart 
                   data={bloodPressureData} 
                   className="h-72"
+                  config={{}} // Add empty config object to satisfy the type requirement
                 />
               </CardContent>
             </Card>
@@ -170,6 +171,7 @@ const HealthHistory = () => {
                 <LineChart 
                   data={weightData} 
                   className="h-72"
+                  config={{}} // Add empty config object to satisfy the type requirement
                 />
               </CardContent>
             </Card>
