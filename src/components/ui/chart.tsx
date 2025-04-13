@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 
@@ -353,6 +354,123 @@ function getPayloadConfigFromPayload(
     : config[key as keyof typeof config]
 }
 
+// Add LineChart and BarChart components that wrap Recharts components
+const LineChart = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentProps<typeof ChartContainer> & {
+    data: {
+      labels: string[];
+      datasets: Array<{
+        label: string;
+        data: number[];
+        borderColor: string;
+        backgroundColor: string;
+      }>;
+    };
+  }
+>(({ data, className, config = {}, ...props }, ref) => {
+  const chartConfig = React.useMemo(() => {
+    return data.datasets.reduce<ChartConfig>(
+      (acc, dataset) => {
+        acc[dataset.label] = {
+          label: dataset.label,
+          color: dataset.borderColor,
+        };
+        return acc;
+      },
+      { ...config }
+    );
+  }, [data, config]);
+
+  return (
+    <ChartContainer ref={ref} className={className} config={chartConfig} {...props}>
+      <RechartsPrimitive.LineChart
+        data={data.labels.map((label, i) => ({
+          name: label,
+          ...data.datasets.reduce<Record<string, number>>((acc, dataset) => {
+            acc[dataset.label] = dataset.data[i];
+            return acc;
+          }, {}),
+        }))}
+        margin={{ top: 10, right: 10, left: 10, bottom: 10 }}
+      >
+        <RechartsPrimitive.CartesianGrid strokeDasharray="3 3" />
+        <RechartsPrimitive.XAxis dataKey="name" />
+        <RechartsPrimitive.YAxis />
+        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartLegend content={<ChartLegendContent />} />
+        {data.datasets.map((dataset) => (
+          <RechartsPrimitive.Line
+            key={dataset.label}
+            type="monotone"
+            dataKey={dataset.label}
+            stroke={dataset.borderColor}
+            activeDot={{ r: 8 }}
+          />
+        ))}
+      </RechartsPrimitive.LineChart>
+    </ChartContainer>
+  );
+});
+LineChart.displayName = "LineChart";
+
+const BarChart = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentProps<typeof ChartContainer> & {
+    data: {
+      labels: string[];
+      datasets: Array<{
+        label: string;
+        data: number[];
+        borderColor: string;
+        backgroundColor: string;
+      }>;
+    };
+  }
+>(({ data, className, config = {}, ...props }, ref) => {
+  const chartConfig = React.useMemo(() => {
+    return data.datasets.reduce<ChartConfig>(
+      (acc, dataset) => {
+        acc[dataset.label] = {
+          label: dataset.label,
+          color: dataset.borderColor,
+        };
+        return acc;
+      },
+      { ...config }
+    );
+  }, [data, config]);
+
+  return (
+    <ChartContainer ref={ref} className={className} config={chartConfig} {...props}>
+      <RechartsPrimitive.BarChart
+        data={data.labels.map((label, i) => ({
+          name: label,
+          ...data.datasets.reduce<Record<string, number>>((acc, dataset) => {
+            acc[dataset.label] = dataset.data[i];
+            return acc;
+          }, {}),
+        }))}
+        margin={{ top: 10, right: 10, left: 10, bottom: 10 }}
+      >
+        <RechartsPrimitive.CartesianGrid strokeDasharray="3 3" />
+        <RechartsPrimitive.XAxis dataKey="name" />
+        <RechartsPrimitive.YAxis />
+        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartLegend content={<ChartLegendContent />} />
+        {data.datasets.map((dataset) => (
+          <RechartsPrimitive.Bar
+            key={dataset.label}
+            dataKey={dataset.label}
+            fill={dataset.backgroundColor}
+          />
+        ))}
+      </RechartsPrimitive.BarChart>
+    </ChartContainer>
+  );
+});
+BarChart.displayName = "BarChart";
+
 export {
   ChartContainer,
   ChartTooltip,
@@ -360,4 +478,6 @@ export {
   ChartLegend,
   ChartLegendContent,
   ChartStyle,
+  LineChart,  // Export the LineChart component
+  BarChart    // Export the BarChart component
 }
