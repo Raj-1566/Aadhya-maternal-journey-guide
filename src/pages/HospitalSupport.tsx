@@ -6,11 +6,11 @@ import { Hospital, Phone, Clock, MapPin, ClipboardList, BookOpen, AlertTriangle,
 const HospitalSupport = () => {
   // Mock data for hospital support
   const hospitalInfo = {
-    name: "Mercy General Hospital",
-    address: "2340 Medical Center Drive, Springfield, IL 62701",
+    name: "मर्सी जनरल अस्पताल",
+    address: "2340 मेडिकल सेंटर ड्राइव, स्प्रिंगफील्ड, IL 62701",
     phone: "(555) 123-4567",
     emergencyPhone: "(555) 987-6543",
-    hours: "24/7 Emergency Services",
+    hours: "24/7 आपातकालीन सेवाएँ",
     website: "https://mercygeneral.example.com",
     mapLink: "https://maps.example.com/mercygeneral",
   };
@@ -18,24 +18,24 @@ const HospitalSupport = () => {
   const careTeam = [
     { 
       id: 1, 
-      name: "Dr. Emily Johnson", 
-      specialty: "OB-GYN",
+      name: "डॉ. एमिली जॉनसन", 
+      specialty: "ओबी-जीवाईएन",
       phone: "(555) 234-5678",
       email: "dr.johnson@example.com",
       photo: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=150"
     },
     { 
       id: 2, 
-      name: "Dr. Michael Chen", 
-      specialty: "Maternal-Fetal Medicine",
+      name: "डॉ. माइकल चेन", 
+      specialty: "मातृ-भ्रूण चिकित्सा",
       phone: "(555) 345-6789",
       email: "dr.chen@example.com",
       photo: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=150"
     },
     { 
       id: 3, 
-      name: "Nurse Lisa Williams", 
-      specialty: "Maternity Nurse",
+      name: "नर्स लिसा विलियम्स", 
+      specialty: "प्रसूति नर्स",
       phone: "(555) 456-7890",
       email: "nurse.williams@example.com",
       photo: "https://images.unsplash.com/photo-1642050923713-c48db6ea4bec?q=80&w=150"
@@ -43,57 +43,57 @@ const HospitalSupport = () => {
   ];
   
   const hospitalBagItems = [
-    { id: 1, category: "For You", items: [
-      { id: 101, name: "Insurance card & ID", checked: true },
-      { id: 102, name: "Birth plan (multiple copies)", checked: true },
-      { id: 103, name: "Comfortable nightgown or pajamas", checked: false },
-      { id: 104, name: "Slippers and socks", checked: false },
-      { id: 105, name: "Toiletries and personal care items", checked: false },
-      { id: 106, name: "Phone charger", checked: true },
-      { id: 107, name: "Light snacks and drinks", checked: false },
+    { id: 1, category: "आपके लिए", items: [
+      { id: 101, name: "बीमा कार्ड और आईडी", checked: true },
+      { id: 102, name: "जन्म योजना (कई प्रतियां)", checked: true },
+      { id: 103, name: "आरामदायक नाइटगाउन या पजामा", checked: false },
+      { id: 104, name: "चप्पल और मोज़े", checked: false },
+      { id: 105, name: "टॉयलेट्री और व्यक्तिगत देखभाल वस्तुएं", checked: false },
+      { id: 106, name: "फोन चार्जर", checked: true },
+      { id: 107, name: "हल्के स्नैक्स और पेय", checked: false },
     ]},
-    { id: 2, category: "For Baby", items: [
-      { id: 201, name: "Going-home outfit", checked: true },
-      { id: 202, name: "Blankets", checked: false },
-      { id: 203, name: "Diapers and wipes", checked: false },
-      { id: 204, name: "Car seat (installed)", checked: true },
+    { id: 2, category: "बच्चे के लिए", items: [
+      { id: 201, name: "घर जाने के लिए कपड़े", checked: true },
+      { id: 202, name: "कंबल", checked: false },
+      { id: 203, name: "डायपर और वाइप्स", checked: false },
+      { id: 204, name: "कार सीट (स्थापित)", checked: true },
     ]},
-    { id: 3, category: "For Partner", items: [
-      { id: 301, name: "Change of clothes", checked: false },
-      { id: 302, name: "Toiletries", checked: false },
-      { id: 303, name: "Snacks and drinks", checked: false },
-      { id: 304, name: "Entertainment (books, tablet, etc.)", checked: false },
+    { id: 3, category: "साथी के लिए", items: [
+      { id: 301, name: "कपड़ों का बदलाव", checked: false },
+      { id: 302, name: "टॉयलेट्री", checked: false },
+      { id: 303, name: "स्नैक्स और पेय", checked: false },
+      { id: 304, name: "मनोरंजन (किताबें, टैबलेट, आदि)", checked: false },
     ]},
   ];
   
   const laborSigns = [
-    { id: 1, sign: "Contractions", description: "Regular, painful contractions that become stronger and closer together." },
-    { id: 2, sign: "Water Breaking", description: "Clear or pinkish fluid leaking or gushing from the vagina." },
-    { id: 3, sign: "Bloody Show", description: "Pink or blood-tinged mucous discharge." },
-    { id: 4, sign: "Lower Back Pain", description: "Persistent lower back pain and cramping that doesn't go away with position changes." },
+    { id: 1, sign: "संकुचन", description: "नियमित, दर्दनाक संकुचन जो मजबूत और अधिक नज़दीक होते जाते हैं।" },
+    { id: 2, sign: "पानी का टूटना", description: "योनि से साफ या गुलाबी तरल का रिसना या बहना।" },
+    { id: 3, sign: "रक्तमय दिखावट", description: "गुलाबी या रक्त-रंजित श्लेष्म स्राव।" },
+    { id: 4, sign: "पीठ के निचले हिस्से में दर्द", description: "पीठ के निचले हिस्से में लगातार दर्द और ऐंठन जो स्थिति बदलने से दूर नहीं होती।" },
   ];
   
   const emergencySigns = [
-    { id: 1, sign: "Heavy Bleeding", description: "Soaking through a pad in less than an hour." },
-    { id: 2, sign: "Severe Abdominal Pain", description: "Persistent, severe pain in your abdomen." },
-    { id: 3, sign: "Decreased Fetal Movement", description: "Noticeable reduction in your baby's movements." },
-    { id: 4, sign: "Severe Headache or Vision Changes", description: "Persistent headache, blurred vision, or seeing spots." },
-    { id: 5, sign: "High Fever", description: "Temperature over 100.4°F (38°C)." },
+    { id: 1, sign: "भारी रक्तस्राव", description: "एक घंटे से कम समय में पैड को भिगोना।" },
+    { id: 2, sign: "गंभीर पेट दर्द", description: "पेट में लगातार, गंभीर दर्द।" },
+    { id: 3, sign: "भ्रूण की हलचल में कमी", description: "आपके बच्चे की हरकतों में उल्लेखनीय कमी।" },
+    { id: 4, sign: "गंभीर सिरदर्द या दृष्टि में परिवर्तन", description: "लगातार सिरदर्द, धुंधली दृष्टि, या धब्बे देखना।" },
+    { id: 5, sign: "उच्च बुखार", description: "100.4°F (38°C) से अधिक तापमान।" },
   ];
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-aadhya-purple">Hospital Support</h1>
-        <p className="text-muted-foreground mt-1">Your hospital resources and birth planning</p>
+        <h1 className="text-3xl font-bold text-aadhya-purple">अस्पताल सहायता</h1>
+        <p className="text-muted-foreground mt-1">आपके अस्पताल संसाधन और जन्म की योजना</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Hospital Information */}
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle>Your Hospital</CardTitle>
-            <CardDescription>Where you'll deliver your baby</CardDescription>
+            <CardTitle>आपका अस्पताल</CardTitle>
+            <CardDescription>जहां आप अपने बच्चे को जन्म देंगी</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -108,16 +108,16 @@ const HospitalSupport = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-aadhya-teal mt-1" />
                 <div>
-                  <h3 className="font-medium">Contact Numbers</h3>
-                  <p className="text-sm">Main: {hospitalInfo.phone}</p>
-                  <p className="text-sm">Emergency: {hospitalInfo.emergencyPhone}</p>
+                  <h3 className="font-medium">संपर्क नंबर</h3>
+                  <p className="text-sm">मुख्य: {hospitalInfo.phone}</p>
+                  <p className="text-sm">आपातकालीन: {hospitalInfo.emergencyPhone}</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-aadhya-blue mt-1" />
                 <div>
-                  <h3 className="font-medium">Hours</h3>
+                  <h3 className="font-medium">समय</h3>
                   <p className="text-sm">{hospitalInfo.hours}</p>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const HospitalSupport = () => {
                   className="flex items-center text-aadhya-teal hover:underline"
                 >
                   <MapPin className="h-4 w-4 mr-1" />
-                  <span>View on Map</span>
+                  <span>मानचित्र पर देखें</span>
                 </a>
                 
                 <a 
@@ -137,7 +137,7 @@ const HospitalSupport = () => {
                   target="_blank" 
                   className="flex items-center text-aadhya-teal hover:underline"
                 >
-                  <span>Visit Website</span>
+                  <span>वेबसाइट पर जाएँ</span>
                 </a>
               </div>
             </div>
@@ -147,8 +147,8 @@ const HospitalSupport = () => {
         {/* Care Team */}
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle>Your Care Team</CardTitle>
-            <CardDescription>The professionals caring for you</CardDescription>
+            <CardTitle>आपकी देखभाल टीम</CardTitle>
+            <CardDescription>आपकी देखभाल करने वाले पेशेवर</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -169,7 +169,7 @@ const HospitalSupport = () => {
                         {member.phone}
                       </a>
                       <a href={`mailto:${member.email}`} className="text-aadhya-teal hover:underline">
-                        Email
+                        ईमेल
                       </a>
                     </div>
                   </div>
@@ -182,9 +182,9 @@ const HospitalSupport = () => {
       
       <Tabs defaultValue="hospital-bag" className="w-full">
         <TabsList className="mb-6">
-          <TabsTrigger value="hospital-bag">Hospital Bag Checklist</TabsTrigger>
-          <TabsTrigger value="labor-signs">When to Go to Hospital</TabsTrigger>
-          <TabsTrigger value="emergency">Emergency Signs</TabsTrigger>
+          <TabsTrigger value="hospital-bag">अस्पताल बैग चेकलिस्ट</TabsTrigger>
+          <TabsTrigger value="labor-signs">अस्पताल कब जाना है</TabsTrigger>
+          <TabsTrigger value="emergency">आपातकालीन संकेत</TabsTrigger>
         </TabsList>
         
         <TabsContent value="hospital-bag">
@@ -192,9 +192,9 @@ const HospitalSupport = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <ClipboardList className="h-5 w-5 mr-2 text-aadhya-purple" />
-                <span>Hospital Bag Checklist</span>
+                <span>अस्पताल बैग चेकलिस्ट</span>
               </CardTitle>
-              <CardDescription>Items to prepare for your delivery</CardDescription>
+              <CardDescription>आपके प्रसव के लिए तैयार करने की वस्तुएं</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
@@ -223,7 +223,7 @@ const HospitalSupport = () => {
                   <p className="text-sm text-muted-foreground">
                     <BookOpen className="h-4 w-4 inline mr-1" />
                     <span>
-                      Prepare your bag by Week 36 (or earlier) and keep it easily accessible.
+                      सप्ताह 36 तक (या उससे पहले) अपना बैग तैयार करें और इसे आसानी से पहुंच के भीतर रखें।
                     </span>
                   </p>
                 </div>
@@ -237,9 +237,9 @@ const HospitalSupport = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Clock className="h-5 w-5 mr-2 text-aadhya-blue" />
-                <span>When to Go to the Hospital</span>
+                <span>अस्पताल कब जाना है</span>
               </CardTitle>
-              <CardDescription>Signs that labor has begun</CardDescription>
+              <CardDescription>प्रसव शुरू होने के संकेत</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -251,11 +251,11 @@ const HospitalSupport = () => {
                 ))}
                 
                 <div className="mt-6 p-4 bg-muted rounded-lg">
-                  <h3 className="font-medium text-aadhya-teal">General Guidelines:</h3>
+                  <h3 className="font-medium text-aadhya-teal">सामान्य दिशानिर्देश:</h3>
                   <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-                    <li>First-time mothers: Head to the hospital when contractions are 5 minutes apart, lasting 1 minute each, for 1 hour (5-1-1 rule).</li>
-                    <li>If your water breaks, go to the hospital even if you're not having contractions.</li>
-                    <li>Always call your healthcare provider before heading to the hospital.</li>
+                    <li>पहली बार माँ बनने वाली: जब संकुचन 5 मिनट के अंतर पर हों, प्रत्येक 1 मिनट तक रहे, 1 घंटे तक (5-1-1 नियम), तब अस्पताल जाएँ।</li>
+                    <li>अगर आपका पानी टूट जाता है, तो भले ही आपको संकुचन न हो रहे हों, अस्पताल जाएँ।</li>
+                    <li>अस्पताल जाने से पहले हमेशा अपने स्वास्थ्य सेवा प्रदाता को कॉल करें।</li>
                   </ul>
                 </div>
               </div>
@@ -268,16 +268,16 @@ const HospitalSupport = () => {
             <CardHeader>
               <CardTitle className="flex items-center text-destructive">
                 <AlertTriangle className="h-5 w-5 mr-2" />
-                <span>Pregnancy Emergency Signs</span>
+                <span>गर्भावस्था के आपातकालीन संकेत</span>
               </CardTitle>
-              <CardDescription>When to seek immediate medical attention</CardDescription>
+              <CardDescription>कब तत्काल चिकित्सा ध्यान देना चाहिए</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="p-4 bg-destructive/10 border border-destructive/20 rounded-lg">
                   <p className="text-sm font-medium text-destructive">
-                    If you experience any of these symptoms, call your healthcare provider 
-                    immediately or go to the emergency room.
+                    अगर आप इनमें से किसी भी लक्षण का अनुभव करती हैं, तो तुरंत अपने स्वास्थ्य सेवा प्रदाता को कॉल करें 
+                    या आपातकालीन कक्ष में जाएँ।
                   </p>
                 </div>
                 
@@ -294,8 +294,8 @@ const HospitalSupport = () => {
                 <div className="mt-4 p-4 bg-muted rounded-lg flex items-start">
                   <Heart className="h-5 w-5 text-aadhya-pink mt-1 mr-3 flex-shrink-0" />
                   <p className="text-sm">
-                    Always trust your instincts. If something doesn't feel right, it's better 
-                    to get checked out and be reassured than to ignore potential warning signs.
+                    हमेशा अपनी अंतर्ज्ञान पर भरोसा करें। अगर कुछ सही महसूस नहीं होता है, तो जांच कराना 
+                    और आश्वस्त होना बेहतर है, बजाय संभावित चेतावनी संकेतों को अनदेखा करने के।
                   </p>
                 </div>
               </div>

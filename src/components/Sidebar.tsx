@@ -21,12 +21,12 @@ const Sidebar = () => {
   };
   
   const menuItems = [
-    { name: 'Dashboard', icon: Home, path: '/' },
-    { name: 'Health History', icon: Heart, path: '/health' },
-    { name: 'Hospital Support', icon: Hospital, path: '/hospital' },
-    { name: 'Learning Resources', icon: Video, path: '/resources' },
-    { name: 'Appointments', icon: Calendar, path: '/appointments' },
-    { name: 'Notes & Journal', icon: FileText, path: '/journal' },
+    { name: 'डैशबोर्ड', icon: Home, path: '/' },
+    { name: 'स्वास्थ्य इतिहास', icon: Heart, path: '/health' },
+    { name: 'अस्पताल सहायता', icon: Hospital, path: '/hospital' },
+    { name: 'शिक्षण संसाधन', icon: Video, path: '/resources' },
+    { name: 'अपॉइंटमेंट', icon: Calendar, path: '/appointments' },
+    { name: 'नोट्स और जर्नल', icon: FileText, path: '/journal' },
   ];
 
   return (
@@ -53,7 +53,7 @@ const Sidebar = () => {
             <div className={`flex items-center ${expanded ? '' : 'md:justify-center'}`}>
               <BabyIcon className="h-8 w-8 text-aadhya-purple" />
               {expanded && (
-                <h1 className="ml-2 text-xl font-display text-aadhya-purple">Aadhya</h1>
+                <h1 className="ml-2 text-xl font-display text-aadhya-purple">आध्या</h1>
               )}
             </div>
             <button 
@@ -99,12 +99,12 @@ const Sidebar = () => {
           <div className="p-4 border-t border-border">
             {expanded ? (
               <div className="text-xs text-muted-foreground">
-                <p>Pregnancy: Week 24</p>
-                <p>Next Appointment: May 15</p>
+                <p>गर्भावस्था: सप्ताह 24</p>
+                <p>अगला अपॉइंटमेंट: 15 मई</p>
               </div>
             ) : (
               <div className="text-center">
-                <span className="text-xs text-muted-foreground">W24</span>
+                <span className="text-xs text-muted-foreground">स24</span>
               </div>
             )}
           </div>

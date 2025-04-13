@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-border py-3 px-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center md:hidden">
-          <h1 className="text-xl font-display text-aadhya-purple">Aadhya</h1>
+          <h1 className="text-xl font-display text-aadhya-purple">आध्या</h1>
         </div>
         
         <div className="flex-1 md:flex-initial md:ml-auto">
@@ -34,18 +34,18 @@ const Navbar = () => {
               </PopoverTrigger>
               <PopoverContent className="w-56 mr-4">
                 <div className="space-y-2">
-                  <h4 className="font-medium">Sarah Nelson</h4>
-                  <p className="text-sm text-muted-foreground">Week 24 of pregnancy</p>
+                  <h4 className="font-medium">सारा नेल्सन</h4>
+                  <p className="text-sm text-muted-foreground">गर्भावस्था का 24 सप्ताह</p>
                   <hr className="my-2" />
                   <div className="space-y-1">
                     <button className="w-full text-left text-sm py-1.5 px-2 rounded-md hover:bg-muted transition-colors">
-                      My Profile
+                      मेरी प्रोफाइल
                     </button>
                     <button className="w-full text-left text-sm py-1.5 px-2 rounded-md hover:bg-muted transition-colors">
-                      Settings
+                      सेटिंग्स
                     </button>
                     <button className="w-full text-left text-sm py-1.5 px-2 rounded-md hover:bg-destructive/10 text-destructive transition-colors">
-                      Sign Out
+                      साइन आउट
                     </button>
                   </div>
                 </div>

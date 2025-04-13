@@ -9,16 +9,16 @@ const HealthHistory = () => {
   const healthMetrics = [
     { 
       id: 1, 
-      name: "Blood Pressure", 
+      name: "रक्तचाप", 
       icon: HeartPulse, 
       color: "text-aadhya-pink",
       current: "118/75 mmHg", 
-      change: "Normal", 
+      change: "सामान्य", 
       changeType: "stable"
     },
     { 
       id: 2, 
-      name: "Weight", 
+      name: "वजन", 
       icon: Weight, 
       color: "text-aadhya-purple",
       current: "145 lbs", 
@@ -27,16 +27,16 @@ const HealthHistory = () => {
     },
     { 
       id: 3, 
-      name: "Temperature", 
+      name: "तापमान", 
       icon: Thermometer, 
       color: "text-aadhya-teal",
       current: "98.6°F", 
-      change: "Normal", 
+      change: "सामान्य", 
       changeType: "stable"
     },
     { 
       id: 4, 
-      name: "Water Intake", 
+      name: "पानी का सेवन", 
       icon: Droplets, 
       color: "text-aadhya-blue",
       current: "48 oz", 
@@ -46,16 +46,16 @@ const HealthHistory = () => {
   ];
   
   const bloodPressureData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+    labels: ["जन", "फर", "मार्च", "अप्रै", "मई"],
     datasets: [
       {
-        label: "Systolic",
+        label: "सिस्टोलिक",
         data: [120, 122, 118, 121, 118],
         borderColor: "rgb(155, 111, 191)",
         backgroundColor: "rgba(155, 111, 191, 0.1)",
       },
       {
-        label: "Diastolic",
+        label: "डायस्टोलिक",
         data: [80, 82, 78, 77, 75],
         borderColor: "rgb(244, 180, 208)",
         backgroundColor: "rgba(244, 180, 208, 0.1)",
@@ -64,10 +64,10 @@ const HealthHistory = () => {
   };
   
   const weightData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+    labels: ["जन", "फर", "मार्च", "अप्रै", "मई"],
     datasets: [
       {
-        label: "Weight (lbs)",
+        label: "वजन (lbs)",
         data: [132, 136, 140, 143, 145],
         borderColor: "rgb(70, 181, 181)",
         backgroundColor: "rgba(70, 181, 181, 0.1)",
@@ -76,41 +76,41 @@ const HealthHistory = () => {
   };
   
   const bloodTestResults = [
-    { id: 1, name: "Hemoglobin", value: "12.5 g/dL", normal: "11.6-15 g/dL", status: "normal" },
-    { id: 2, name: "Iron", value: "68 μg/dL", normal: "50-170 μg/dL", status: "normal" },
-    { id: 3, name: "Glucose", value: "105 mg/dL", normal: "70-110 mg/dL", status: "normal" },
-    { id: 4, name: "Vitamin D", value: "28 ng/mL", normal: "30-100 ng/mL", status: "low" },
+    { id: 1, name: "हीमोग्लोबिन", value: "12.5 g/dL", normal: "11.6-15 g/dL", status: "normal" },
+    { id: 2, name: "आयरन", value: "68 μg/dL", normal: "50-170 μg/dL", status: "normal" },
+    { id: 3, name: "ग्लूकोज़", value: "105 mg/dL", normal: "70-110 mg/dL", status: "normal" },
+    { id: 4, name: "विटामिन डी", value: "28 ng/mL", normal: "30-100 ng/mL", status: "low" },
   ];
   
   const prenatalVisits = [
     { 
       id: 1, 
-      date: "Feb 5, 2025", 
+      date: "5 फरवरी, 2025", 
       week: "12", 
-      doctor: "Dr. Emily Johnson", 
-      notes: "First trimester screening. Ultrasound shows healthy development. Prescribed prenatal vitamins." 
+      doctor: "डॉ. एमिली जॉनसन", 
+      notes: "पहली तिमाही की जांच। अल्ट्रासाउंड स्वस्थ विकास दिखाता है। प्रीनेटल विटामिन निर्धारित किए गए।" 
     },
     { 
       id: 2, 
-      date: "Mar 20, 2025", 
+      date: "20 मार्च, 2025", 
       week: "18", 
-      doctor: "Dr. Emily Johnson", 
-      notes: "Anatomy scan completed. All measurements normal. Gender revealed if desired." 
+      doctor: "डॉ. एमिली जॉनसन", 
+      notes: "एनाटॉमी स्कैन पूरा हुआ। सभी माप सामान्य हैं। यदि चाहें तो लिंग का खुलासा किया गया।" 
     },
     { 
       id: 3, 
-      date: "May 1, 2025", 
+      date: "1 मई, 2025", 
       week: "24", 
-      doctor: "Dr. Emily Johnson", 
-      notes: "Glucose tolerance test. Blood pressure and fetal heartbeat normal. Discussed birth plan options." 
+      doctor: "डॉ. एमिली जॉनसन", 
+      notes: "ग्लूकोज टॉलरेंस टेस्ट। रक्तचाप और भ्रूण की हृदय धड़कन सामान्य है। प्रसव योजना विकल्पों पर चर्चा की गई।" 
     },
   ];
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-aadhya-purple">Health History</h1>
-        <p className="text-muted-foreground mt-1">Track and monitor your health metrics</p>
+        <h1 className="text-3xl font-bold text-aadhya-purple">स्वास्थ्य इतिहास</h1>
+        <p className="text-muted-foreground mt-1">अपने स्वास्थ्य मेट्रिक्स को ट्रैक और मॉनिटर करें</p>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -141,38 +141,42 @@ const HealthHistory = () => {
       
       <Tabs defaultValue="charts" className="w-full">
         <TabsList className="mb-6">
-          <TabsTrigger value="charts">Health Charts</TabsTrigger>
-          <TabsTrigger value="blood-tests">Blood Tests</TabsTrigger>
-          <TabsTrigger value="prenatal-visits">Prenatal Visits</TabsTrigger>
+          <TabsTrigger value="charts">स्वास्थ्य चार्ट</TabsTrigger>
+          <TabsTrigger value="blood-tests">रक्त परीक्षण</TabsTrigger>
+          <TabsTrigger value="prenatal-visits">प्रसव पूर्व विज़िट</TabsTrigger>
         </TabsList>
         
         <TabsContent value="charts">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle>Blood Pressure</CardTitle>
-                <CardDescription>Last 5 months</CardDescription>
+                <CardTitle>रक्तचाप</CardTitle>
+                <CardDescription>पिछले 5 महीने</CardDescription>
               </CardHeader>
               <CardContent>
                 <LineChart 
                   data={bloodPressureData} 
                   className="h-72"
-                  config={{}} // Add empty config object to satisfy the type requirement
-                />
+                  config={{}}
+                >
+                  <></>
+                </LineChart>
               </CardContent>
             </Card>
             
             <Card>
               <CardHeader>
-                <CardTitle>Weight (lbs)</CardTitle>
-                <CardDescription>Last 5 months</CardDescription>
+                <CardTitle>वजन (lbs)</CardTitle>
+                <CardDescription>पिछले 5 महीने</CardDescription>
               </CardHeader>
               <CardContent>
                 <LineChart 
                   data={weightData} 
                   className="h-72"
-                  config={{}} // Add empty config object to satisfy the type requirement
-                />
+                  config={{}}
+                >
+                  <></>
+                </LineChart>
               </CardContent>
             </Card>
           </div>
@@ -181,8 +185,8 @@ const HealthHistory = () => {
         <TabsContent value="blood-tests">
           <Card>
             <CardHeader>
-              <CardTitle>Blood Test Results</CardTitle>
-              <CardDescription>Latest lab results from your last checkup</CardDescription>
+              <CardTitle>रक्त परीक्षण परिणाम</CardTitle>
+              <CardDescription>आपकी अंतिम जांच से नवीनतम प्रयोगशाला परिणाम</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -190,14 +194,14 @@ const HealthHistory = () => {
                   <div key={test.id} className="flex justify-between items-center py-2 border-b border-border">
                     <div>
                       <p className="font-medium">{test.name}</p>
-                      <p className="text-sm text-muted-foreground">Normal range: {test.normal}</p>
+                      <p className="text-sm text-muted-foreground">सामान्य सीमा: {test.normal}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-bold">{test.value}</p>
                       <p className={`text-xs ${
                         test.status === "normal" ? "text-green-500" : "text-amber-500"
                       }`}>
-                        {test.status === "normal" ? "Normal" : "Low - Supplement recommended"}
+                        {test.status === "normal" ? "सामान्य" : "कम - सप्लीमेंट की सिफारिश की गई"}
                       </p>
                     </div>
                   </div>
@@ -205,9 +209,9 @@ const HealthHistory = () => {
                 
                 <div className="mt-6 p-4 bg-muted rounded-lg">
                   <p className="text-sm">
-                    Your latest blood test results show overall good health. Vitamin D levels are slightly low - 
-                    your doctor has recommended a daily supplement of 1000 IU. 
-                    All other results are within normal range for your stage of pregnancy.
+                    आपके नवीनतम रक्त परीक्षण परिणाम समग्र रूप से अच्छे स्वास्थ्य को दर्शाते हैं। विटामिन डी के स्तर थोड़े कम हैं - 
+                    आपके डॉक्टर ने 1000 IU की दैनिक खुराक की सिफारिश की है। 
+                    गर्भावस्था के इस चरण में अन्य सभी परिणाम सामान्य सीमा के भीतर हैं।
                   </p>
                 </div>
               </div>
@@ -218,8 +222,8 @@ const HealthHistory = () => {
         <TabsContent value="prenatal-visits">
           <Card>
             <CardHeader>
-              <CardTitle>Prenatal Visit History</CardTitle>
-              <CardDescription>Record of your doctor appointments</CardDescription>
+              <CardTitle>प्रसव पूर्व विज़िट इतिहास</CardTitle>
+              <CardDescription>आपके डॉक्टर अपॉइंटमेंट का रिकॉर्ड</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
@@ -230,7 +234,7 @@ const HealthHistory = () => {
                       <h4 className="font-medium flex items-center">
                         {visit.date}
                         <span className="ml-2 px-2 py-0.5 bg-aadhya-purple/10 text-aadhya-purple text-xs rounded-full">
-                          Week {visit.week}
+                          सप्ताह {visit.week}
                         </span>
                       </h4>
                       <p className="text-sm text-muted-foreground">{visit.doctor}</p>
@@ -241,7 +245,7 @@ const HealthHistory = () => {
                 
                 <div className="flex justify-center mt-4">
                   <button className="aadhya-button-primary">
-                    Add New Record
+                    नया रिकॉर्ड जोड़ें
                   </button>
                 </div>
               </div>

@@ -11,87 +11,87 @@ const ResourceLibrary = () => {
   const videos = [
     {
       id: 1,
-      title: "Understanding First Trimester Changes",
+      title: "पहली तिमाही के परिवर्तनों को समझना",
       thumbnail: "https://images.unsplash.com/photo-1535185384036-28bbc8035f28?q=80&w=720",
       duration: "12:35",
       category: "pregnancy",
       trimester: "first",
-      description: "Learn about the major physical and emotional changes during the first 12 weeks of pregnancy."
+      description: "गर्भावस्था के पहले 12 सप्ताह के दौरान होने वाले प्रमुख शारीरिक और भावनात्मक परिवर्तनों के बारे में जानें।"
     },
     {
       id: 2,
-      title: "Staying Active During Pregnancy",
+      title: "गर्भावस्था के दौरान सक्रिय रहना",
       thumbnail: "https://images.unsplash.com/photo-1518310952931-b1de897abd40?q=80&w=720",
       duration: "15:20",
       category: "health",
       trimester: "all",
-      description: "Safe exercises and activity recommendations throughout your pregnancy journey."
+      description: "आपकी गर्भावस्था यात्रा के दौरान सुरक्षित व्यायाम और गतिविधि की सिफारिशें।"
     },
     {
       id: 3,
-      title: "Preparing Your Home for Baby",
+      title: "बच्चे के लिए अपना घर तैयार करना",
       thumbnail: "https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=720",
       duration: "18:45",
       category: "preparation",
       trimester: "third",
-      description: "Essential steps to prepare your home before your baby arrives."
+      description: "आपके बच्चे के आने से पहले अपने घर को तैयार करने के आवश्यक चरण।"
     },
     {
       id: 4,
-      title: "Breastfeeding Basics",
+      title: "स्तनपान की मूल बातें",
       thumbnail: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=720",
       duration: "22:10",
       category: "childcare",
       trimester: "third",
-      description: "Everything you need to know about breastfeeding your newborn."
+      description: "अपने नवजात शिशु को स्तनपान कराने के बारे में आपको जानने की ज़रूरत है सब कुछ।"
     },
     {
       id: 5,
-      title: "Understanding Baby's Cries",
+      title: "बच्चे के रोने को समझना",
       thumbnail: "https://images.unsplash.com/photo-1542884689-139467c0c47b?q=80&w=720",
       duration: "14:30",
       category: "childcare",
       trimester: "postpartum",
-      description: "Learn to decode what your baby is trying to communicate through different cries."
+      description: "अलग-अलग रोने के माध्यम से आपका बच्चा क्या बताने की कोशिश कर रहा है, यह समझें।"
     },
     {
       id: 6,
-      title: "Managing Second Trimester Symptoms",
+      title: "दूसरी तिमाही के लक्षणों का प्रबंधन",
       thumbnail: "https://images.unsplash.com/photo-1531079997448-485eb7336f34?q=80&w=720",
       duration: "16:15",
       category: "health",
       trimester: "second",
-      description: "Tips for handling common second trimester symptoms like back pain and leg cramps."
+      description: "पीठ दर्द और पैर की ऐंठन जैसे सामान्य दूसरी तिमाही के लक्षणों को संभालने के लिए टिप्स।"
     },
   ];
   
   const articles = [
     {
       id: 1,
-      title: "Nutrition Guide for Pregnancy",
+      title: "गर्भावस्था के लिए पोषण गाइड",
       category: "health",
-      readTime: "8 min read",
+      readTime: "8 मिनट का पठन",
       image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=720",
     },
     {
       id: 2,
-      title: "Creating Your Birth Plan",
+      title: "अपनी प्रसव योजना बनाना",
       category: "preparation",
-      readTime: "12 min read",
+      readTime: "12 मिनट का पठन",
       image: "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?q=80&w=720",
     },
     {
       id: 3,
-      title: "Baby Sleep Schedules: What to Expect",
+      title: "बच्चे की नींद अनुसूची: क्या उम्मीद करें",
       category: "childcare",
-      readTime: "10 min read",
+      readTime: "10 मिनट का पठन",
       image: "https://images.unsplash.com/photo-1566004100631-35d015d6a491?q=80&w=720",
     },
     {
       id: 4,
-      title: "Postpartum Recovery Timeline",
+      title: "प्रसवोत्तर रिकवरी समयरेखा",
       category: "health",
-      readTime: "15 min read",
+      readTime: "15 मिनट का पठन",
       image: "https://images.unsplash.com/photo-1544767432-932e2c0f55d8?q=80&w=720",
     },
   ];
@@ -99,28 +99,28 @@ const ResourceLibrary = () => {
   const checklists = [
     {
       id: 1,
-      title: "First Trimester To-Dos",
+      title: "पहली तिमाही की टू-डू सूची",
       category: "pregnancy",
       items: 12,
       icon: HeartPulse,
     },
     {
       id: 2,
-      title: "Baby Essentials Shopping List",
+      title: "बच्चे की आवश्यक वस्तुओं की खरीदारी सूची",
       category: "preparation",
       items: 24,
       icon: ShoppingBag,
     },
     {
       id: 3,
-      title: "Nursery Setup Guide",
+      title: "नर्सरी सेटअप गाइड",
       category: "preparation",
       items: 15,
       icon: Home,
     },
     {
       id: 4,
-      title: "Newborn Care Basics",
+      title: "नवजात देखभाल की मूल बातें",
       category: "childcare",
       items: 18,
       icon: Baby,
@@ -131,18 +131,29 @@ const ResourceLibrary = () => {
     ? videos 
     : videos.filter(video => video.category === activeFilter || video.trimester === activeFilter);
 
+  const categoryMap = {
+    "pregnancy": "गर्भावस्था",
+    "health": "स्वास्थ्य",
+    "preparation": "तैयारी",
+    "childcare": "शिशु देखभाल",
+    "first": "पहली तिमाही",
+    "second": "दूसरी तिमाही",
+    "third": "तीसरी तिमाही",
+    "postpartum": "प्रसवोत्तर"
+  };
+
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-3xl font-bold text-aadhya-purple">Learning Resources</h1>
-        <p className="text-muted-foreground mt-1">Educational videos and guides for your journey</p>
+        <h1 className="text-3xl font-bold text-aadhya-purple">शिक्षण संसाधन</h1>
+        <p className="text-muted-foreground mt-1">आपकी यात्रा के लिए शैक्षिक वीडियो और गाइड</p>
       </div>
       
       <Tabs defaultValue="videos" className="w-full">
         <TabsList className="mb-6">
-          <TabsTrigger value="videos">Videos</TabsTrigger>
-          <TabsTrigger value="articles">Articles</TabsTrigger>
-          <TabsTrigger value="checklists">Checklists</TabsTrigger>
+          <TabsTrigger value="videos">वीडियो</TabsTrigger>
+          <TabsTrigger value="articles">लेख</TabsTrigger>
+          <TabsTrigger value="checklists">चेकलिस्ट</TabsTrigger>
         </TabsList>
         
         <TabsContent value="videos">
@@ -155,7 +166,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              All Videos
+              सभी वीडियो
             </button>
             <button 
               onClick={() => setActiveFilter("pregnancy")}
@@ -165,7 +176,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Pregnancy Basics
+              गर्भावस्था की मूल बातें
             </button>
             <button 
               onClick={() => setActiveFilter("health")}
@@ -175,7 +186,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Health & Wellness
+              स्वास्थ्य और तंदुरुस्ती
             </button>
             <button 
               onClick={() => setActiveFilter("preparation")}
@@ -185,7 +196,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Preparation
+              तैयारी
             </button>
             <button 
               onClick={() => setActiveFilter("childcare")}
@@ -195,7 +206,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Childcare
+              शिशु देखभाल
             </button>
             <button 
               onClick={() => setActiveFilter("first")}
@@ -205,7 +216,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              First Trimester
+              पहली तिमाही
             </button>
             <button 
               onClick={() => setActiveFilter("second")}
@@ -215,7 +226,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Second Trimester
+              दूसरी तिमाही
             </button>
             <button 
               onClick={() => setActiveFilter("third")}
@@ -225,7 +236,7 @@ const ResourceLibrary = () => {
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
             >
-              Third Trimester
+              तीसरी तिमाही
             </button>
           </div>
           
@@ -251,7 +262,7 @@ const ResourceLibrary = () => {
                   <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{video.description}</p>
                   <div className="flex mt-3">
                     <span className="bg-aadhya-purple/10 text-aadhya-purple text-xs rounded-full px-2 py-0.5">
-                      {video.category.charAt(0).toUpperCase() + video.category.slice(1)}
+                      {categoryMap[video.category]}
                     </span>
                   </div>
                 </CardContent>
@@ -261,12 +272,12 @@ const ResourceLibrary = () => {
           
           {filteredVideos.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-muted-foreground">No videos found for this filter. Try another category.</p>
+              <p className="text-muted-foreground">इस फ़िल्टर के लिए कोई वीडियो नहीं मिला। अन्य श्रेणी आज़माएँ।</p>
               <button 
                 onClick={() => setActiveFilter("all")}
                 className="mt-4 px-6 py-2 bg-aadhya-purple text-white rounded-full text-sm"
               >
-                View All Videos
+                सभी वीडियो देखें
               </button>
             </div>
           )}
@@ -292,7 +303,7 @@ const ResourceLibrary = () => {
                     </div>
                     <div className="mt-auto pt-4">
                       <span className="bg-aadhya-blue/10 text-aadhya-blue text-xs rounded-full px-2 py-0.5">
-                        {article.category.charAt(0).toUpperCase() + article.category.slice(1)}
+                        {categoryMap[article.category]}
                       </span>
                     </div>
                   </CardContent>
@@ -303,7 +314,7 @@ const ResourceLibrary = () => {
           
           <div className="text-center mt-8">
             <button className="px-6 py-3 bg-aadhya-teal text-white rounded-full text-sm">
-              Browse All Articles
+              सभी लेख ब्राउज़ करें
             </button>
           </div>
         </TabsContent>
@@ -317,9 +328,9 @@ const ResourceLibrary = () => {
                     <checklist.icon className="h-8 w-8 text-aadhya-teal" />
                   </div>
                   <h3 className="font-medium text-lg">{checklist.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{checklist.items} items</p>
+                  <p className="text-sm text-muted-foreground mt-1">{checklist.items} आइटम</p>
                   <button className="mt-4 px-4 py-2 bg-aadhya-purple/10 text-aadhya-purple rounded-full text-sm w-full">
-                    View Checklist
+                    चेकलिस्ट देखें
                   </button>
                 </CardContent>
               </Card>
@@ -327,12 +338,12 @@ const ResourceLibrary = () => {
           </div>
           
           <div className="bg-muted rounded-lg p-6 mt-8">
-            <h3 className="font-medium text-lg mb-2">Create Custom Checklist</h3>
+            <h3 className="font-medium text-lg mb-2">कस्टम चेकलिस्ट बनाएं</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Make your own personalized checklist for any stage of your pregnancy or childcare journey.
+              अपनी गर्भावस्था या शिशु देखभाल यात्रा के किसी भी चरण के लिए अपनी व्यक्तिगत चेकलिस्ट बनाएं।
             </p>
             <button className="px-6 py-3 bg-aadhya-teal text-white rounded-full text-sm">
-              Create New Checklist
+              नई चेकलिस्ट बनाएं
             </button>
           </div>
         </TabsContent>
